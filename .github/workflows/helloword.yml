@@ -1,14 +1,19 @@
-name: Hola mundo Actions GH
+name: Hola Mundo Actions GH
 
 on: 
-    push:
+     push:
         branches:
             - main
 
-jobs: 
-    hola_mundo:
-            name: Imrpimir Hola mundo 
-            runs-on: ubuntu-latest
-            steps:
-            - name: Imprimir Hola Mundo
-           # run: echo "Hola Mundo"
+jobs:
+        hola_mundo:
+                name: Imprimir Hola Mundo
+                runs-on: ubuntu-latest
+                steps:
+                    - name: Revisar el Repositorio
+                    uses: actions/checkout@v2
+
+                    - name: Ejecutar codigo de python
+                    uses: python3 app.py
+                    
+
