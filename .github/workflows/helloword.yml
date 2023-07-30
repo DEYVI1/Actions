@@ -13,6 +13,8 @@ jobs:
                 - name: Revisar el repo
                   uses: actions/checkout@v2
 
+                - name: install pandas
+                  run: pip install pandas
                 - name: install libs
                   run: pip install -r requeriments.txt
                 - name: update
