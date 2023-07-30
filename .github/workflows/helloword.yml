@@ -15,9 +15,5 @@ jobs:
 
                 - name: install pandas
                   run: pip install pandas
-                - name: install libs
-                  run: pip install -r requeriments.txt
-                - name: update
-                  run: choco install python
                 - name: Ejecutar condigo de python
                   run: python app.py
